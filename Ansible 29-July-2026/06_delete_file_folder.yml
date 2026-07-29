@@ -1,0 +1,13 @@
+---
+- name: Delete file and folder
+  hosts: all
+  tasks:
+    - name: Deleting a file
+      file:
+        path: /tmp/newfile.txt
+        state: absent
+
+    - name: Deleting a folder
+      file:
+        path: /tmp/myfolder
+        state: absent
