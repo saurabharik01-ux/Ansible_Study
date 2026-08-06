@@ -1,0 +1,11 @@
+---
+- name: Installing apps
+  yum:
+    name: "{{ item }}"
+    state: present
+  tags: i-nginx
+  loop: 
+    - yum
+    - httpd
+    - vim
+    - telnet

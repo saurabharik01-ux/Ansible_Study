@@ -1,0 +1,5 @@
+---
+- name: change perm
+  file:
+    path: /tmp/myfile.txt
+    mode: u=r,g=r,o=w

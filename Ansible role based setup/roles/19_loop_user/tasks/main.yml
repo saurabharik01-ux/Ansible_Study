@@ -1,0 +1,10 @@
+---
+- name: user creation loop
+  user:
+    name: "{{ item }}" 
+    comment: new user adding for qa team
+    shell: /bin/bash
+  loop:
+    - abc
+    - user2
+    - user3

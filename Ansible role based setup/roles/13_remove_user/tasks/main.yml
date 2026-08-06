@@ -1,0 +1,6 @@
+---
+- name: user remove
+  user:
+    name: abc
+    state: absent
+    remove: yes

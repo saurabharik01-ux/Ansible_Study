@@ -1,0 +1,4 @@
+---
+- name: Print output
+  debug:
+    msg: "All right"

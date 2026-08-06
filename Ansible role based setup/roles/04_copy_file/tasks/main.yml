@@ -1,0 +1,9 @@
+---
+- name: Copy file
+  copy:
+    src: /root/myfile.txt
+    dest: /tmp/myfile.txt
+    owner: user
+    group: user
+    mode: '0777'
+    backup: true

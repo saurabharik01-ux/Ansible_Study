@@ -1,0 +1,13 @@
+---
+- name: Creating a file
+  file:
+    path: /tmp/newfile.txt
+    state: touch
+    owner: user
+    group: user
+    mode: u=rwx,g=rw,o=r
+
+- name: Creating a folder
+  file:
+    path: /tmp/myfolder
+    state: directory

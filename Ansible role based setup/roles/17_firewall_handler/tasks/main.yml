@@ -1,0 +1,8 @@
+---
+- name: enable firewall
+  firewalld:
+    port: 80/tcp
+    permanent: true
+    state: enabled
+  notify:
+    - reload firewalld

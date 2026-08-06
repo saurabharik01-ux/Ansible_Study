@@ -1,0 +1,12 @@
+---
+- name: enable firewall port
+  firewalld:
+    service: nginx
+    port: 80/tcp
+    permanent: true
+    state: enabled
+
+- name: reload the firewall
+  service: 
+    name: firewalld
+    state: reloaded
