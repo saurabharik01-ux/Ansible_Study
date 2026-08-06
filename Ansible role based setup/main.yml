@@ -1,0 +1,25 @@
+---
+- name: Apply Generic Setup
+  hosts: all
+  become: true
+  roles:
+    - 01_ping
+    # - 02_debug
+    # - 03_install_start_nginx
+    # - 04_copy_file
+    # - 05_create_file_folder
+    # - 06_delete_file_folder
+    # - 07_change_permission
+    # - 08_run_script
+    # - 09_run_script_args
+    # - 10_add_cron
+    # - 11_remove_cron
+    # - 12_user_creation
+    # - 13_remove_user
+    # - 14_set_password
+    # - 15_download_file
+    # - 16_enable_firewall
+    # - 17_firewall_handler
+    # - 18_conditions
+    # - 19_loop_user
+    # - 20_loop_items
