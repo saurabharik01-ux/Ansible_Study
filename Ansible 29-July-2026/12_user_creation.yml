@@ -1,0 +1,13 @@
+---
+- name: user management
+  hosts: all
+  become: true
+  tasks:
+    - name: user creation
+      user:
+        name: abc
+        comment: new user adding for qa
+        home: /home/abc
+        shell: /bin/bash
+        group: qa
+        groups: qa,development

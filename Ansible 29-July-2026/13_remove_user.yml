@@ -1,0 +1,10 @@
+---
+- name: user management remove
+  hosts: all
+  become: true
+  tasks:
+    - name: user remove
+      user:
+        name: abc
+        state: absent
+        remove: yes
